@@ -56,7 +56,7 @@ public class Main {
     public static double toHighSalary() {
         double highSalary = 0;
         for (Employee employee : employees) {
-            if (employee == null) continue;
+            if (employee == null) {continue;}
             if (highSalary < employee.getSalary()) {
                 highSalary = employee.getSalary();
             }
@@ -69,7 +69,7 @@ public class Main {
         int counterEmployeer = 0;
         double average;
         for (Employee employee : employees) {
-            if (employee == null) continue;
+            if (employee == null) {continue;}
             counterEmployeer++;
             sum += employee.getSalary();
         }
@@ -79,7 +79,7 @@ public class Main {
 
     public static void printOnlyName() {
         for (Employee employee : employees) {
-            if (employee == null) continue;
+            if (employee == null) {continue;}
             System.out.println(employee.getName()+" " + employee.getLastName());
         }
     }

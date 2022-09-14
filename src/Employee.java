@@ -8,7 +8,8 @@ public class Employee {
     private static int counter = 1; //счетчик
 
 
-    public void setDepartment(int department) {  if (department < 0 || department >= 6) throw new IllegalArgumentException("Такого депортамента нет");
+    public void setDepartment(int department) {
+        if (department < 0 || department >= 6) {throw new IllegalArgumentException("Такого депортамента нет");}
 
         this.department = department;
     }
@@ -43,7 +44,7 @@ public class Employee {
 
 
     public Employee(String name, String lastName, String midlleName, int department, int salary) {
-        if (department < 0 || department >= 6) throw new IllegalArgumentException("Такого депортамента нет");
+        if (department < 0 || department >= 6){ throw new IllegalArgumentException("Такого депортамента нет");}
         this.name = name;
         this.lastName = lastName;
         this.midlleName = midlleName;
